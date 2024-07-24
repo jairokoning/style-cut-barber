@@ -1,5 +1,6 @@
 {
   "name": "style-cut-barber",
+  "author": "Jairo Koning <jairo.koning@gmail.com>",
   "private": true,
   "scripts": {
     "build": "turbo build",
