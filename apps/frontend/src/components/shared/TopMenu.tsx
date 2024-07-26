@@ -16,7 +16,7 @@ export default function TopMenu() {
                     {user ? (
                         <UserMenu user={user} />
                     ) : (
-                        <Link href="/entrar">Entrar</Link>
+                        <Link href="/login">Entrar</Link>
                     )}
                 </div>
             </nav>
