@@ -20,7 +20,7 @@ model Professional {
   imageUrl    String     @map("image_url")
   rating      Float
   ratingsQty  Int        @map("rating_qty")
-  schedules   Schedule[]
+  schedules   Scheduling[]
 
   @@map("professionals")
 }
@@ -32,12 +32,12 @@ model Service {
   price       Float
   slotsQty    Int        @map("slots_qty")
   imageUrl    String     @map("image_url")
-  schedules   Schedule[]
+  schedules   Scheduling[]
 
   @@map("services")
 }
 
-model Schedule {
+model Scheduling {
   id             String    @id @default(uuid())
   customerEmail  String    @map("customer_email")
   date           DateTime  @db.Timestamptz(3)
