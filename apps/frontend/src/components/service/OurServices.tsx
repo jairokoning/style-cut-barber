@@ -10,7 +10,7 @@ export default function OurServices() {
     const { services } = useServices()
 
     function startScheduling() {
-        router.push('/agendamento')
+        router.push('/scheduling')
     }
 
     return (

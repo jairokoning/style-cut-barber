@@ -6,7 +6,7 @@ import TopMenu from '@/components/shared/TopMenu'
 export default function SloganTitle() {
     return (
         <div className="py-10 relative h-[700px]">
-            <Image src="/banners/principal.webp" fill alt="Barbearia" className="object-cover" />
+            <Image src="/banners/principal.jpg" fill alt="Barbearia" className="object-cover" />
             <div
                 className="
                     flex flex-col items-center
@@ -28,7 +28,7 @@ export default function SloganTitle() {
                         🤘 Seu estilo é o nosso rock! 🤘
                     </p>
                     <Link
-                        href="/agendamento"
+                        href="/scheduling"
                         className="
                             bg-gradient-to-r from-green-500 to-green-600
                             text-white font-semibold text-base md:text-lg

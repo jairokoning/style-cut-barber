@@ -17,14 +17,14 @@ export default function UserForm() {
 
     useEffect(() => {
         if (user?.email) {
-            const dest = params.get('destino') as string
-            router.push(dest ? dest : '/')
+            const next = params.get('next') as string
+            router.push(next ? next : '/')
         }
     }, [user, router, params])
 
     return (
         <div className="flex justify-center items-center h-screen relative">
-            <Image src="/banners/principal.webp" fill alt="Barbearia" className="object-cover" />
+            <Image src="/banners/principal.jpg" fill alt="Barbearia" className="object-cover" />
             <div
                 className="
                     flex flex-col justify-center items-center gap-10

@@ -10,7 +10,7 @@ export default function Landing() {
     return (
         <div>
             <SloganTitle />
-            <ContainerBackground image="/banners/servicos.webp">
+            <ContainerBackground image="">
                 <OurServices />
             </ContainerBackground>
             <ContainerBackground image="/banners/profissionais.webp">
