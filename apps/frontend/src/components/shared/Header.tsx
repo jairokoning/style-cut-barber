@@ -9,7 +9,7 @@ export interface HeaderProps {
 export default function Header(props: HeaderProps) {
     return (
         <div className="py-10 relative h-[180px]">
-            <Image src="/banners/principal.jpg" fill alt="Barbearia" className="object-cover" />
+            <Image src="/banners/principal.webp" fill alt="Barbearia" className="object-cover" />
             <div
                 className="
                     flex flex-col items-center
