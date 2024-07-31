@@ -19,7 +19,7 @@ export default function OurCustomers() {
             <Title
                 tag="Clientes"
                 main="Quem Manda Aqui"
-                secondary="Nossos clientes são os chefes! Aqui, eles mandam, desmandam e ainda saem com estilo de rockstar!"
+                secondary="Nossos clientes são os patrões! Aqui, eles decidem, escolhem e ainda saem com estilo impecável!"
             />
             <div className="h-[900px] w-full">
                 <LayoutGrid cards={cards} />

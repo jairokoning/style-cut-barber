@@ -21,11 +21,11 @@ export default function SloganTitle() {
                             Transformações
                         </span>
                         <span className="text-gradient text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black pb-2">
-                            Lendárias
+                            Elegantes
                         </span>
                     </h1>
                     <p className="w-96 text-center text-zinc-400 text-base sm:text-lg font-extralight">
-                        🤘 Seu estilo é o nosso rock! 🤘
+                        🎩 Seu estilo é a nossa tradição! 👒
                     </p>
                     <Link
                         href="/scheduling"

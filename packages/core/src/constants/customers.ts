@@ -2,30 +2,30 @@ const customers = [
     {
         id: 1,
         imageUrl: '/customers/cliente-1.webp',
-        name: 'Ricardo Soundbar',
+        name: 'Ricardo',
         testimony:
-            'Chega falando alto e ocupando espaço com seu tamanho de viking, mas que tem um coração do tamanho de seu topete! Um verdadeiro gigante gente boa, ele sempre diz: "Os caras aqui são brutais no corte e na amizade! Serviço top, recomendo de olhos fechados!"',
+            'Chega com uma presença marcante e imponente, mas com um coração tão grande quanto seu penteado! Um verdadeiro gigante gentil, ele sempre diz: "Os profissionais aqui são excepcionais no corte e na amizade! Serviço de primeira, recomendo sem hesitação!"',
     },
     {
         id: 2,
         imageUrl: '/customers/cliente-2.webp',
-        name: 'Tiaguinho - "O Atacante"',
+        name: 'Tiaguinho',
         testimony:
-            'Fanático por futebol! Ele sempre chega animado, pronto para bater um papo e discutir o último jogo. Tiaguinho sempre diz: "Cortar cabelo aqui é muito legal, mas eu prefiro fazer gol!"',
+            'Apaixonado por futebol! Ele sempre chega animado, pronto para conversar e discutir o último jogo. Tiaguinho sempre diz: "Cortar cabelo aqui é muito bom, mas eu prefiro fazer gol!"',
     },
     {
         id: 3,
         imageUrl: '/customers/cliente-3.webp',
         name: 'Patrícia',
         testimony:
-            'Nossa cliente com o cabelo mais vermelho do bairro e uma paixão por doramas que não tem fim! Patrícia diz: "Aqui é meu lugar favorito! Saio com o cabelo perfeito e ainda compartilho todos os dramas dos doramas. Serviço top demais!"',
+            'Nossa cliente com o cabelo mais vibrante do bairro e uma paixão interminável por séries asiáticas! Patrícia diz: "Aqui é meu lugar favorito! Saio com o cabelo impecável e ainda compartilho todos os dramas das minhas séries. Serviço excelente!"',
     },
     {
         id: 4,
         imageUrl: '/customers/cliente-4.webp',
         name: 'Sr. Carlos',
         testimony:
-            'Nosso cliente mais velho e cheio de histórias incríveis que nunca se repetem! Ele anima a barbearia com suas aventuras e sabedoria. Sr. Carlos diz: "A Barba Brutal é raiz, me lembra a barbearia que eu ia quando era moleque. Serviço excelente e histórias boas garantidas"',
+            'Nosso cliente mais antigo e cheio de histórias incríveis que nunca se repetem! Ele anima a barbearia com suas aventuras e sabedoria. Sr. Carlos diz: "A Barbearia Clássica é autêntica, me lembra a barbearia que eu frequentava quando era jovem. Serviço excelente e boas histórias garantidas."',
     },
 ]
 
