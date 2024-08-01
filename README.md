@@ -1,7 +1,13 @@
-<div .element: style="display: flex; align-items: center; justify-content: center; background: #363535; padding-left: 10px; margin-bottom: 30px;">
-  <img src="apps/frontend/public/logo.png" alt="Logo" style="height: 50px; margin-left: 10px; margin-top: 8px;">
-  <h1 style="color: #fff">Style Cut Barber</h1>  
-</div>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 600 100">
+  <foreignObject width="600" height="100">
+    <div style="display: flex; align-items: center; justify-content: center; background: #363535; padding-left: 10px; margin-bottom: -3000px;">
+        <img src="apps/frontend/public/logo.png" alt="Logo" style="height: 50px; margin-left: 10px; margin-top: 8px;">
+      <h1 style="color: #fff">Style Cut Barber</h1>  
+    </div>
+  </foreignObject>
+</svg>
+
+
 
 Bem-vindo ao repositório do **Sistema de Agendamentos para Barbearia!** Este projeto foi desenvolvido para fornecer uma solução eficiente e moderna para o gerenciamento de agendamentos em uma barbearia. Utilizei várias tecnologias e práticas de desenvolvimento para criar uma aplicação robusta e escalável.
 
@@ -94,7 +100,10 @@ Adotei o padrão de casos de uso, alinhado com os princípios da Clean Architect
 ## 📑 Documentação API
 
 **scheduling-api** Agendamento
-<div style="font-family: Arial, sans-serif; margin: 20px; padding: 20px; border: 1px solid #e5e5e5; border-radius: 5px;">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="900"  height="100%" viewBox="0 0 990 1140">
+  <foreignObject width="800" height="1140">
+    <div style="font-family: Arial, sans-serif; margin: 20px; padding: 20px; border: 1px solid #e5e5e5; border-radius: 5px;">
   <div style="display: flex; justify-content: space-between; align-items: center; background-color: #f2f2f2; padding: 10px; border: 2px solid #55C546; border-radius: 8px;">
     <div style="display: flex; align-items: center;">
       <span style="background-color: #55C546; color: white; padding: 5px 10px; border-radius: 3px; font-size: 14px; margin-right: 10px;">POST</span>
@@ -150,7 +159,8 @@ Adotei o padrão de casos de uso, alinhado com os princípios da Clean Architect
       </code>
     </pre>    
 </div>
-
+  </foreignObject>
+</svg>
 
 ## 🪜 Próximos passos
 - [ ] Tratamento de erros
