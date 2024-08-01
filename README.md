@@ -1,13 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 600 100">
-  <foreignObject width="600" height="100">
-    <div style="display: flex; align-items: center; justify-content: center; background: #363535; padding-left: 10px; margin-bottom: -3000px;">
-        <img src="apps/frontend/public/logo.png" alt="Logo" style="height: 50px; margin-left: 10px; margin-top: 8px;">
-      <h1 style="color: #fff">Style Cut Barber</h1>  
-    </div>
-  </foreignObject>
-</svg>
-
-
+<div  align="center">
+ <img src="docs/banner.png" alt="Banner">
+</div>
 
 Bem-vindo ao repositório do **Sistema de Agendamentos para Barbearia!** Este projeto foi desenvolvido para fornecer uma solução eficiente e moderna para o gerenciamento de agendamentos em uma barbearia. Utilizei várias tecnologias e práticas de desenvolvimento para criar uma aplicação robusta e escalável.
 
@@ -50,6 +43,54 @@ Implementei o design pattern de repositório para isolar a lógica de acesso a d
 ### Use Cases e Clean Architecture
 Adotei o padrão de casos de uso, alinhado com os princípios da Clean Architecture, para organizar a lógica de negócio da aplicação. Cada caso de uso representa uma ação específica que o sistema pode executar, garantindo que a lógica de negócio esteja bem definida e separada das outras camadas.
 
+## 🗂️ Estrutura do projeto
+```mermaid
+  graph LR;
+      FRONT-END-->BACK-END;
+      FRONT-END-->CORE;
+      BACK-END-->CORE;
+```
+
+![UseCase](https://www.plantuml.com/plantuml/png/JOz1IWH134NtESLdzhFG4uoqUnSo1uZLiITCLQL9qeY8X_4iNimQQT1TUF_zm3z5ikVMAgLc5JmgBywDCN5OO1QSmwZAQo8DhiibCQjBIRLESTM-yl319SsVyxqA-4t2cX3zCanLfUV0WKAqShdo8dXOfC_SHcBu860BAHo2m-JA3lwB3xVcURhxBpszf3WkvjzVhXQmigqyM-pkFNqI5HoFjzv-37WQFyVI7m00)
+
+## 📑 Documentação API
+
+**scheduling-api** Agendamento
+ 
+- **🟩POST🟩 /schedules** - Criar novo agendamento.
+    **Request body**    
+    ```json
+        {
+          "customerEmail": "string",
+          "date": "Date",
+          "professional": "string",
+          "services": "string[]",
+        }
+    ```
+    **Response**    
+    ```json
+        {
+          "id": "string",
+          "customerEmail": "string",
+          "date": "Date",
+          "professional": "string",
+          "services": "string[]",
+        }
+    ```
+
+- **🟦GET🟦 /schedulesbusy/:professional_id/:date** - Obter horários ocupados.
+    **Parameters** *(path)*
+    ```
+      professional_id: string
+      date: Date
+    ```
+    **Response**       
+    ```json
+        [
+          "string",
+        ]    
+    ```
+
 ## ⚙️ Instalação e Configuração
 1. Clone este repositório:
     ```sh
@@ -87,80 +128,6 @@ Adotei o padrão de casos de uso, alinhado com os princípios da Clean Architect
     ```
 10. Você poderá acessar a aplicação em: http://localhost:3000
 
-## 🗂️ Estrutura do projeto
-```mermaid
-  graph LR;
-      FRONT-END-->BACK-END;
-      FRONT-END-->CORE;
-      BACK-END-->CORE;
-```
-
-![UseCase](https://www.plantuml.com/plantuml/png/JOz1IWH134NtESLdzhFG4uoqUnSo1uZLiITCLQL9qeY8X_4iNimQQT1TUF_zm3z5ikVMAgLc5JmgBywDCN5OO1QSmwZAQo8DhiibCQjBIRLESTM-yl319SsVyxqA-4t2cX3zCanLfUV0WKAqShdo8dXOfC_SHcBu860BAHo2m-JA3lwB3xVcURhxBpszf3WkvjzVhXQmigqyM-pkFNqI5HoFjzv-37WQFyVI7m00)
-
-## 📑 Documentação API
-
-**scheduling-api** Agendamento
-
-<svg xmlns="http://www.w3.org/2000/svg" width="900"  height="100%" viewBox="0 0 990 1140">
-  <foreignObject width="800" height="1140">
-    <div style="font-family: Arial, sans-serif; margin: 20px; padding: 20px; border: 1px solid #e5e5e5; border-radius: 5px;">
-  <div style="display: flex; justify-content: space-between; align-items: center; background-color: #f2f2f2; padding: 10px; border: 2px solid #55C546; border-radius: 8px;">
-    <div style="display: flex; align-items: center;">
-      <span style="background-color: #55C546; color: white; padding: 5px 10px; border-radius: 3px; font-size: 14px; margin-right: 10px;">POST</span>
-      <span style="font-size: 16px; font-weight: bold;">/schedules</span>
-    </div>
-    <span >Criar novo agendamento.</span>
-  </div>    
-    <pre>
-    <b>Parameters</b> <i>(path)</i>
-      -
-    <b>Parameters</b> <i>(query)</i>
-      -
-    <b>Request body</b>
-      <code class="language-js">
-        {
-          "customerEmail: "string",
-          "date": "Date",
-          "professional": "string",
-          "services": "string[]",
-        }
-      </code>
-    <b>Response</b>
-      <code class="language-js">
-        {
-          "id": "string",
-          "customerEmail: "string",
-          "date": "Date",
-          "professional": "string",
-          "services": "string[]",
-        }
-      </code>
-    </pre>
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #f2f2f2; padding: 10px; border: 2px solid #61affe; border-radius: 8px;">
-    <div style="display: flex; align-items: center;">
-      <span style="background-color: #61affe; color: white; padding: 5px 10px; border-radius: 3px; font-size: 14px; margin-right: 10px;">GET</span>
-      <span style="font-size: 16px; font-weight: bold;">/schedules/busy/:professional_id/:date</span>
-    </div>
-    <span>Obter horários ocupados.</span>
-  </div>    
-    <pre>
-    <b>Parameters</b> <i>(path)</i>
-      professional_id: string
-      date: Date
-    <b>Parameters</b> <i>(query)</i>
-      -
-    <b>Request body</b>
-      -
-    <b>Response</b>
-      <code class="language-js">
-        [
-          "string",
-        ]
-      </code>
-    </pre>    
-</div>
-  </foreignObject>
-</svg>
 
 ## 🪜 Próximos passos
 - [ ] Tratamento de erros
