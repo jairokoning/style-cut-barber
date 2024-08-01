@@ -1,4 +1,4 @@
-<div style="display: flex; align-items: center; justify-content: center; background: #363535; padding-left: 10px; margin-bottom: 30px;">
+<div .element: style="display: flex; align-items: center; justify-content: center; background: #363535; padding-left: 10px; margin-bottom: 30px;">
   <img src="apps/frontend/public/logo.png" alt="Logo" style="height: 50px; margin-left: 10px; margin-top: 8px;">
   <h1 style="color: #fff">Style Cut Barber</h1>  
 </div>
